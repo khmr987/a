@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aa</title>
+    <title>PicGallery</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="https://khmr987.github.io/a/favicon.png">
 </head>
 <body>
-    <div class="gallery-container">
-        <div class="gallery">
-            </div>
+    <div class="top-bar">
+    <div class="top-bar-left">PicGallery</div>
+    <div class="top-bar-right">
+    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+    <button id="uploadButton">+</button>
+    </div>
+    </div>
+    <div class="gallery" id="imageGallery">
     </div>
     <script src="script.js"></script>
 </body>

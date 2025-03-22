@@ -1,68 +1,58 @@
 body {
     margin: 0;
-    padding: 0;
-    background-color: #111; /* Dark background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     font-family: sans-serif;
-    overflow: hidden; /* Prevent scrollbars */
+    background-color: #121212;
+    color: white;
 }
 
-.body::before {
-    content: '';
+.top-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #ff0080, #ff8c00, #4a148c, #00ced1);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    z-index: -1;
-    opacity: 0.2; /* Subtle background glow */
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5); /* Blurry-transparent */
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 100;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.top-bar-left {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.gallery-container {
-    max-width: 90%;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(20, 20, 20, 0.8); /* Semi-transparent container */
-    padding: 20px;
+.top-bar-right button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 80px 20px 20px; /* Adjusted padding to account for top bar */
 }
 
 .gallery img {
-    width: 200px; /* Adjust image size */
+    width: 100%;
     height: auto;
-    margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle glow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Stronger glow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    filter: brightness(1.2); /* Enhance brightness on hover */
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.7); /* Glowing effect */
 }
