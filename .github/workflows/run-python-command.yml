@@ -1,0 +1,13 @@
+name: Run Python Command
+
+on: [push]
+
+jobs:
+  run-python-command:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python command
+      run: python -m 8000
