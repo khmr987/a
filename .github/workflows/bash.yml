@@ -17,3 +17,6 @@ jobs:
       
     - name: Run directory
       run: ls
+
+    - name: py deployment
+      run: python -m http.server 8000
