@@ -3,23 +3,14 @@
 <head>
     <title>PicUploader</title>
     <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        #upload-container {
-            border: 2px dashed #ccc;
-            padding: 20px;
-            text-align: center;
-        }
-        #message {
-            margin-top: 10px;
-            font-weight: bold;
-        }
+      body{
+        display: flex;
+        justify-content: center; 
+        align-content: center; 
+        align-items: center; 
+        height: 100vh;
+        background-color: white;
+         }
 .loader {
   align-items: center;
   justify-content: center;
@@ -63,33 +54,5 @@
     </style>
 </head>
 <body>
-  <div class="loader">
-  </div>
-    <div id="upload-container">
-        <input type="file" id="image-upload" accept=".jpeg, .jpg, .gif, .png">
-        <p id="message"></p>
-    </div>
-
-    <script>
-        const fileInput = document.getElementById('image-upload');
-        const message = document.getElementById('message');
-
-        fileInput.addEventListener('change', function(event) {
-            const file = event.target.files[0];
-
-            if (file) {
-                const allowedTypes = ['image/jpeg', 'image/jpg', 'image/gif', 'image/png'];
-                if (allowedTypes.includes(file.type)) {
-                    // Simulate saving to the "images" folder (in reality, this would be a server-side operation)
-                    message.textContent = `File "${file.name}" uploaded (simulated). In a real application, it would be saved to the images folder.`;
-                    message.style.color = 'green';
-                } else {
-                    message.textContent = 'Invalid file type. Please upload a JPEG, JPG, GIF, or PNG.';
-                    message.style.color = 'red';
-                    fileInput.value = ''; // Clear the invalid file
-                }
-            }
-        });
-    </script>
 </body>
 </html>
