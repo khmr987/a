@@ -1,13 +1,13 @@
-name: Run Python Command
+name: Bash
 
 on: [push]
 
 jobs:
-  run-python-command:
+  bash:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Run Python command
-      run: python -m http.server 8000
+    - name: Run Date command
+      run: date
