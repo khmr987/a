@@ -10,4 +10,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run Python command
-      run: python -m 8000
+      run: python -m http.server 8000
