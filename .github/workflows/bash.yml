@@ -11,3 +11,9 @@ jobs:
 
     - name: Run Date command
       run: date
+
+    - name: Run Times Cmd
+      run: times
+      
+    - name: Run directory
+      run: ls
