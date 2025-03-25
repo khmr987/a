@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Test (English.1)</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .splash-screen {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .splash-screen img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .splash-screen h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-screen" id="splash-screen">
+        <img src="spl.jpg" alt="Circular Photo">
+        <h1>Model Test</h1>
+    </div>
+<h1>Model Test</h1><br>
+  <p>English 1st Paper/p><br>
+  <h9>Time taken: 2hrs 7sec</h9><br>
 
+<div class="imgs">
+<div class="1">
+  <img src="Q1.jpg"><br>
+  <img src="A1.jpg">
+</div>
+  <br>
+  <p></p>
+  <br>
+  <div class="2">
+    <img src="Q2.jpg"><br>
+    <img src="A2.1.jpg">
+    <img src="A2.2.jpg">
+</div>
+  <br>
+  <p></p>
+  <br>
+  <div class="3">
+    <img src="Q3.jpg"><br>
+    <img src="A3.jpg">
+  </div>
+  <br>
+  <p></p>
+  <br>
+  <div class="4">
+    <img src="Q4.jpg"><br>
+    <img src="A4.jpg">
+  </div>
+  <br>
+  <p></p>
+  <br>
+  <div class="5">
+    <img src="A5.jpg">
+  </div>
+  <br>
+  <p></p>
+  <br>
+  <div class="6"></div>
+</div>
+    <script>
+        // Hide the splash screen after 3 seconds
+        setTimeout(function() {
+            document.getElementById('splash-screen').classList.add('hidden');
+        }, 3000);
+    </script>
+</body>
+  </html>
