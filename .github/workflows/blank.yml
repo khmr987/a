@@ -31,5 +31,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run vd command
-        run: cd
-        cd 14949_video.mp4
+        run: cd 
