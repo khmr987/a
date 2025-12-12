@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a command
-        run: wget https://ip296322386.ahcdn.com/key=PSc3c65t9AIG57KNvGTjZw,s=,end=1749799272,limit=1/state=aEvNZ4Y5/buffer=5000000:956452,480.2/speed=172635/reftag=0220149417/ssd1/102/8/26335258/14949_video.mp4
+        run: wget https://khmr987.github.io/a/exp/1.mp4
