@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a command
-        run: wget https://khmr987.github.io/a/exp/1.mp4
+        run: ls
